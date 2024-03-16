@@ -58,7 +58,7 @@ const ContactUs: React.FC = () => {
                 userId: userId
             }),
         };
-        fetch(`${process.env.BACKEND_URL}/sendmail`, requestOptions)
+        fetch(`https://mortgage-backend-eight.vercel.app/sendmail`, requestOptions)
             .then((response) => response)
             .then(() => setCheckMail(true))
             .catch(() => {

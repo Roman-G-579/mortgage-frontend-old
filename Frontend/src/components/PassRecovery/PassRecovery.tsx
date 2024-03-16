@@ -29,7 +29,7 @@ const PassRecovery = () => {
         }
 
         // Send data to backend
-        axios.post(`${process.env.BACKEND_URL}/recovery`, {
+        axios.post(`https://mortgage-backend-eight.vercel.app/recovery`, {
             email: emailValue
         })
             .then(() => {
@@ -58,7 +58,7 @@ const PassRecovery = () => {
         }
 
         // Send new password to backend
-        axios.post(`${process.env.BACKEND_URL}/change-password`, {
+        axios.post(`https://mortgage-backend-eight.vercel.app/change-password`, {
             email: email,
             password: passwordValue
         })

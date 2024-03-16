@@ -26,8 +26,6 @@ const Login = () => {
         const passwordValue = passwordInput?.value || "";
 
         console.log(emailValue, passwordValue);
-        const backend = process.env.BACKEND_URL;
-        console.log(backend);
         // Send data to backend
         axios.post(`https://mortgage-backend-eight.vercel.app/login`, {
             email: emailValue,

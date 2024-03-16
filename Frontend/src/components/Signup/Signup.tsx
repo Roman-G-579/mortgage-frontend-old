@@ -46,7 +46,7 @@ const Signup = () => {
         }
 
         // Send data to backend
-        axios.post(`${process.env.BACKEND_URL}/register`, {
+        axios.post(`https://mortgage-backend-eight.vercel.app/register`, {
             name: nameValue,
             phone: phoneValue,
             email: emailValue,
